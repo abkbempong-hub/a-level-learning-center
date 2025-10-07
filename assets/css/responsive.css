@@ -1,0 +1,72 @@
+/* -----------------------------
+   RESPONSIVE STYLES
+------------------------------ */
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 0.9rem;
+  }
+}
